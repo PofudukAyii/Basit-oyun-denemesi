@@ -16,16 +16,13 @@ def random_soru():
     xTakvimSayı = random.randint(1, 30)
     takvimSeçim = (günler.index(xTakvimGün) + xTakvimSayı - 1) % 7
     takvimCevap = günler[takvimSeçim]
-    print(takvimCevap)
 
 # Takvim sorusu için gereken atamalar bitiş #
 
     if soruTipi == "Takvim":
         print(
-            f"Bugün günlerden {xTakvimGün} ise {xTakvimSayı} gün sonraki gün nedir? ")
+            f"Bugün günlerden {xTakvimGün} ise {xTakvimSayı - 1} gün sonraki gün nedir? ")
         return takvimCevap
-    if soruTipi == "İşlem":
-        print()
 
 # Takvim kodları başlangıç #
 
@@ -36,13 +33,18 @@ def takvim_doğru_cevap():
     return tahmin == doğruCevap
 
 
-def takvim_oyun():
+def takvim_oyunu():
     skor = 0
     for i in range(sorusayisi):
         if takvim_doğru_cevap() == True:
             skor += 1
-            print("Tebrikler")
+            print("--------------------------")
+            print("Doğru")
+            print("--------------------------\n")
         else:
-            print("Üzgünüm")
+            print("--------------------------")
+            print("Yanlış")
+            print("--------------------------\n")
+
     print(f"Skorunuz: {skor}")
 # Takvim kodları bitiş #
