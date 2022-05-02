@@ -1,7 +1,7 @@
-import operator
 import random
 from re import S
 import time
+
 soru_sayısı = 5
 soru = ["saat"]
 soruTipi = random.choice(soru)
@@ -54,6 +54,3 @@ def saat_oyunu():
             print("--------------------------\n")
 
     print(f"Skorunuz: {skor}")
-
-
-saat_oyunu()
