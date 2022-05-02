@@ -5,8 +5,7 @@ from işlem import işlem_oyunu
 from alışveriş1 import alışveriş_oyunu
 from alışveriş2 import alışveriş_oyunu_2
 
-oyun_türü = ["AlışVeriş1", "Alışveriş2", "İşlem", "Paragraf",
-             "Problem", "Saat", "Takvim"]
+oyun_türü = ["AlışVeriş1", "Alışveriş2", "İşlem", "Problem", "Saat", "Takvim"]
 
 seçilmiş_tür = random.choice(oyun_türü)
 print(seçilmiş_tür)
