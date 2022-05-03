@@ -1,7 +1,8 @@
 from operator import iadd
 import random
 
-soru_sayısı = 5
+soru_sayısı = 10
+
 soru = ["alışveriş1"]
 soruTipi = random.choice(soru)
 
@@ -18,6 +19,7 @@ def random_soru():
     alışverişCevap = elma_sayısı + şeftal_sayısı - çürük_sayısı
 
     if soruTipi == "alışveriş1":
+        # print(alışverişCevap)
         print(
             f"{seçilmiş_kişi} bakkala gidiyor bakkaldan {elma_sayısı} tane 🍎 ve {şeftal_sayısı} tane 🍑 alıyor, {seçilmiş_kişi} eve geldiğinde aldığı ürünlerin toplamının {çürük_sayısı} tanesi çürük çıkıyor ve çöpe atıyor {seçilmiş_kişi} bu meyveleri yemek için sofraya oturduğunda önünde kaç tane meyve olur? ")
         return alışverişCevap

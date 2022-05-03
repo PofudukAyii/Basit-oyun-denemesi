@@ -1,11 +1,12 @@
 import random
-from saat import saat_oyunu
-from takvim import takvim_oyunu
-from işlem import işlem_oyunu
-from alışveriş1 import alışveriş_oyunu
-from alışveriş2 import alışveriş_oyunu_2
+from uygulamalar.saat import saat_oyunu
+from uygulamalar.takvim import takvim_oyunu
+from uygulamalar.işlem import işlem_oyunu
+from uygulamalar.alışveriş1 import alışveriş_oyunu
+from uygulamalar.alışveriş2 import alışveriş_oyunu_2
 
-oyun_türü = ["AlışVeriş1", "Alışveriş2", "İşlem", "Problem", "Saat", "Takvim"]
+
+oyun_türü = ["AlışVeriş1", "Alışveriş2", "İşlem", "Saat", "Takvim"]
 
 seçilmiş_tür = random.choice(oyun_türü)
 print(seçilmiş_tür)
@@ -20,5 +21,3 @@ elif seçilmiş_tür == "AlışVeriş1":
     alışveriş_oyunu()
 elif seçilmiş_tür == "Alışveriş2":
     alışveriş_oyunu_2()
-elif seçilmiş_tür != "Takvim" "İşlem" "Saat" "AlışVeriş1" "AlışVeriş2":
-    print("Henüz kodlamakla uğraşmadın")

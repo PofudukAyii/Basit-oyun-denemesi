@@ -16,6 +16,7 @@ def random_soru():
     takvimCevap = günler[takvimSeçim]
 
     if soruTipi == "Takvim":
+        # print(takvimCevap)
         print(
             f"Bugün günlerden {xTakvimGün} ise {xTakvimSayı - 1} gün sonraki gün nedir? ")
         return takvimCevap

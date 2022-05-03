@@ -9,7 +9,7 @@ soruTipi = random.choice(soru)
 
 def random_soru():
 
-    saat_ek = random.randint(1, 23)
+    saat_ek = random.randint(1, 10)
     dakika_ek = random.randint(1, 59)
     timer = time.localtime()
     saat = timer.tm_hour
@@ -28,7 +28,7 @@ def random_soru():
     saatCevap = (f"{yeni_saat}:{yeni_dakika}")
 
     if soruTipi == "saat":
-        print(saatCevap)
+        # print(saatCevap)
         print(
             f"Şuan saat {saat}:{dakika} ise {saat_ek}:{dakika_ek} sonra saat kaç olur?")
         return saatCevap

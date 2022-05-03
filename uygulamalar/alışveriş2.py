@@ -1,7 +1,8 @@
 from operator import iadd
 import random
 
-soru_sayısı = 5
+soru_sayısı = 10
+
 soru = ["alışveriş2"]
 soruTipi = random.choice(soru)
 
@@ -21,6 +22,7 @@ def random_soru():
     alışveriş2Cevap = int(toplam_fiyat / beğenilen_ürün_sayısı)
 
     if soruTipi == "alışveriş2":
+        # print(alışveriş2Cevap)
         print(
             f"{seçilmiş_kişi} bir {seçilmiş_mağza} mağzasına gidiyor gittiği mağzadan {beğenilen_ürün_sayısı} ürün beğeniyor ve şans eseri her ürünün fiyatının aynı olduğunu görüyor, aldığı ürünlerin toplam fiyatı {toplam_fiyat} olmak üzere kişinin aldığı ürünlerden bir tanesinin fiyatı nekadardır?")
         return alışveriş2Cevap

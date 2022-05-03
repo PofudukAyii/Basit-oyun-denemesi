@@ -2,7 +2,7 @@ import operator
 import random
 from re import S
 
-soru_sayısı = 5
+soru_sayısı = 20
 
 
 def random_soru():
@@ -10,8 +10,8 @@ def random_soru():
         '+': operator.add,
         '-': operator.sub, }
 
-    sayı1 = random.randint(1, 10)
-    sayı2 = random.randint(1, 10)
+    sayı1 = random.randint(50, 90)
+    sayı2 = random.randint(20, 49)
 
     operation = random.choice(list(operators.keys()))
     soruCevap = operators[operation](sayı1, sayı2)
